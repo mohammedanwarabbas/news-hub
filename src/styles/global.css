@@ -1,0 +1,57 @@
+/* NewsDetailModal component */
+.newsdetailmodal {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.newsdetailmodal .news-image {
+  max-height: 400px;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* NewsCard component */
+.news-card .news-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* NewsFeed component */
+.source-filter input.form-check-input {
+  /* to display hand symobol on checkbox hover */
+  cursor: pointer;
+}
+
+/* LoadingSpinner component */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #d72e2e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+/* Animation for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
