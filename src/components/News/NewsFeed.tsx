@@ -205,6 +205,9 @@ const NewsFeed: React.FC = () => {
             Next
           </button>
         </div>
+        <div className="text-center d-flex justify-content-center align-items-center border rounded-1 mb-2 bg-warning py-1">
+          <p className="px-1 my-1 text-danger">!NewsAPI won't work on custom domains. It works only on localhost. Sorry for inconvinence.</p>
+        </div>
 
         {/* preview search query (ex: displaying ressults for asteroid) */}
         {query && (
